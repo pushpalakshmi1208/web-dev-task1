@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.a3-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-box {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.text-align p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hyphen-line {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.heading h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.team {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Flexbox layout for profile images */
+.profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between profile containers */
+}
+
+.profile-container {
+    text-align: center;
+    max-width: 150px; /* Control width of profile container */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-container p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
